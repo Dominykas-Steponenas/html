@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starter Page - Enhanced Design</title>
+  <link rel="icon" href="assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link href="assets/css/lab_10.css" rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#about" class="nav-link"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume" class="nav-link"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#contact" class="nav-link"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+        <img src="assets/img/profil.jpg" alt="About Me"  style="max-width: 32%; height: 25%;">
+        <p>Student at VGTU. Studying Information systems engineering</p>
+      </div>
+    </section>
+
+    <section id="resume" class="section bg-light">
+      <div class="container">
+        <h2>Resume</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Education</h3>
+            <ul>
+              <li><strong>Vilnius Gediminas Technical University</strong> – Information Systems Engineering (2023–present)</li>
+              <li><strong>CodeAcademy</strong> – Advanced Web Development Course (2020–2021)</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3>Work Experience</h3>
+            <ul>
+              <li><strong>Student</strong></li>
+              <li><strong>Skills:</strong> C++, Python</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle-container text-center mt-4">
+          <button id="theme-toggle" class="theme-toggle-button">Light/Dark Mode</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <img src="assets/img/code.png" class="img-fluid" alt="E-Commerce">
+            <h4>Expert coding</h4>
+            <p>High level of coding.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <img src="assets/img/phone.png" class="img-fluid" alt="Mobile App">
+            <h4>Mobile App</h4>
+            <p>Developed a React Native app for task management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <p>Email: kazkaskazkas@gmail.com</p>
+            <p>Phone: +370 88856694</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <h3>Dominykas Steponėnas</h3>
+      <p>Bankrot</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/functions.js"></script>
+</body>
+
+</html>
