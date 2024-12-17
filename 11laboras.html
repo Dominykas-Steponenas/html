@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Starter Page - MyResume Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- MathJax for rendering formulas -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    /* CSS for video and iframe responsiveness */
+    video, iframe {
+      width: 100%;
+      height: auto;
+    }
+    iframe {
+      border: none;
+    }
+  </style>
+</head>
+
+<body class="starter-page-page">
+  <header>
+    <img src="assets/img/Logo.png" alt="Logo">
+    <h2>Welcome to my page</h2>
+    <p>Made by Steponėnas © Incorporated</p>
+    <svg width="100" height="100"
+    xmls="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40"
+    stroke="black" stroke-width="4"
+    fill="red" />
+    <text x="50" y="60" font-size="30"
+    text-anchor="middle"
+    fill="black">SI</text>
+  </svg>
+  </header>
+  <div id="clock"></div>
+    <script>
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    hours = hours < 10 ? '0' + hours : hours;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    const timeString = `${hours}:${minutes}:${seconds}`;
+
+    document.getElementById('clock').textContent = timeString;
+  }
+
+  updateClock();
+
+  setInterval(updateClock, 1000);
+</script>
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Learn more about me</p>
+        </div>
+        <!-- Personal Photo Added -->
+        <img src="assets/img/profil.jpg" alt="About Me" style="max-width: 35%; height: 25%;">
+        <p>Student at VGTU. Studying Information systems engineering</p>
+      </div>
+    </section>
+
+    <!-- Formula Section -->
+    <section id="formula" class="formula">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Mathematical Formula</h2>
+          <p>Here is the formula from the image:</p>
+        </div>
+        <!-- MathJax Formula -->
+        <div class="math-formula">
+          $$
+          \sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2}
+          $$
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Some of my projects</p>
+        </div>
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/code.png" class="img-fluid" alt="E-Commerce Website">
+              <div class="portfolio-info">
+                <h4>Expert coding</h4>
+                <p>High level of coding.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>What I can do for you</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 service-item">
+            <i class="bi bi-code-slash"></i>
+            <h4>Coding</h4>
+            <p>Can write hello world in VC Studio</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <i class="bi bi-phone"></i>
+            <h4>Mobile App Development</h4>
+            <p>Can change your ringtone.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <i class="bi bi-palette"></i>
+            <h4>UI/UX Design</h4>
+            <p>Creating user-friendly and visually appealing designs for websites and apps.</p>
+          </div>
+        </div>`
+      </div>
+        
+
+        <!-- Video embed -->
+        <div class="row">
+          <div class="col-12">
+            <h3>Watch Our Process</h3>
+            <video controls>
+              <source src="assets/img/how_i_learned_to_code_in_4_months.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>                       
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3>Learn More About Us</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/461MK_gLi3c" 
+            style="border: none;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+                    </div>
+
+        <!-- Audio embed -->
+        <div class="row">
+          <div class="col-12">
+            <h3>Listen to Our Podcast</h3>
+            <audio controls>
+              <source src="assets/img/how_i_learned_to_code_in_4_months.mp3" type="audio/mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>Get in touch</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>Contact Details</h3>
+        <p>Email: kazkaskazkas@gmail.com</p>
+        <p>Phone: +370 88856694</p>
+      </div>
+      <div class="col-lg-6">
+        <h3>Contact Form</h3>
+        <form id="contact-form">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required>
+
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required>
+
+          <label for="question1">How much do you like megos mesainis from Hesburger? (1-10)</label>
+          <input type="number" id="question1" name="question1" min="1" max="10" required>
+
+          <label for="question2">How much do you dislike the agurkas? (1-10)</label>
+          <input type="number" id="question2" name="question2" min="1" max="10" required>
+
+          <label for="question3">How good are you at coding? (1-10)</label>
+          <input type="number" id="question3" name="question3" min="1" max="10" required>
+
+          <label for="question4">How do you like my page? (1-10)</label>
+          <input type="number" id="question4" name="question4" min="1" max="10" required>
+
+          <label for="question5">How much do you like tomatoe? (1-10)</label>
+          <input type="number" id="question5" name="question5" min="1" max="10" required>
+
+          <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    function submitForm() {
+      const firstName = document.getElementById('first-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const address = document.getElementById('address').value;
+      const question1 = parseInt(document.getElementById('question1').value);
+      const question2 = parseInt(document.getElementById('question2').value);
+      const question3 = parseInt(document.getElementById('question3').value);
+      const question4 = parseInt(document.getElementById('question4').value);
+      const question5 = parseInt(document.getElementById('question5').value);
+  
+      const formData = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phone: phone,
+        address: address,
+        questions: {
+          q1: question1,
+          q2: question2,
+          q3: question3,
+          q4: question4,
+          q5: question5
+        }
+      };
+  
+      const questionsAverage = (question1 + question2 + question3 + question4 + question5) / 5;
+  
+      console.log(formData);
+  
+      let resultHTML = `<p><strong>First Name:</strong> ${formData.firstName}</p>`;
+      resultHTML += `<p><strong>Last Name:</strong> ${formData.lastName}</p>`;
+      resultHTML += `<p><strong>Email:</strong> ${formData.email}</p>`;
+      resultHTML += `<p><strong>Phone:</strong> ${formData.phone}</p>`;
+      resultHTML += `<p><strong>Address:</strong> ${formData.address}</p>`;
+      resultHTML += `<p><strong>Question 1 (Satisfaction):</strong> ${formData.questions.q1}</p>`;
+      resultHTML += `<p><strong>Question 2 (Ease of use):</strong> ${formData.questions.q2}</p>`;
+      resultHTML += `<p><strong>Question 3 (Recommendation):</strong> ${formData.questions.q3}</p>`;
+      resultHTML += `<p><strong>Question 4 (Design rating):</strong> ${formData.questions.q4}</p>`;
+      resultHTML += `<p><strong>Question 5 (Customer support):</strong> ${formData.questions.q5}</p>`;
+      resultHTML += `<p><strong>Average Rating:</strong> ${questionsAverage.toFixed(2)}</p>`;
+      
+      document.body.insertAdjacentHTML('beforeend', `<div class="form-result">${resultHTML}</div>`);
+    }
+    function submitForm() {
+  const firstName = document.getElementById('first-name').value;
+  const lastName = document.getElementById('last-name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const address = document.getElementById('address').value;
+  const question1 = parseInt(document.getElementById('question1').value);
+  const question2 = parseInt(document.getElementById('question2').value);
+  const question3 = parseInt(document.getElementById('question3').value);
+  const question4 = parseInt(document.getElementById('question4').value);
+  const question5 = parseInt(document.getElementById('question5').value);
+
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!emailPattern.test(email)) {
+    alert("Prašome įvesti galiojantį el. pašto adresą.");
+    return;
+  }
+
+  const phonePattern = /^\+?\d{1,3}[-\s]?\(?\d{1,4}\)?[-\s]?\d{6,}$/;
+  if (!phonePattern.test(phone)) {
+    alert("Prašome įvesti galiojantį telefono numerį.");
+    return;
+  }
+
+  if (address.trim() === "") {
+    alert("Prašome įvesti adresą.");
+    return;
+  }
+
+  const formData = {
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    phone: phone,
+    address: address,
+    questions: {
+      q1: question1,
+      q2: question2,
+      q3: question3,
+      q4: question4,
+      q5: question5
+    }
+  };
+
+  const questionsAverage = (question1 + question2 + question3 + question4 + question5) / 5;
+
+  let avgColor = "black";
+  if (questionsAverage <= 3.4) {
+    avgColor = "red";
+  } else if (questionsAverage >= 3.5 && questionsAverage <= 7.1) {
+    avgColor = "orange";
+  } else if (questionsAverage >= 7.2) {
+    avgColor = "green";
+  }
+
+  console.log(formData);
+
+  let resultHTML = `<p><strong>First Name:</strong> ${formData.firstName}</p>`;
+  resultHTML += `<p><strong>Last Name:</strong> ${formData.lastName}</p>`;
+  resultHTML += `<p><strong>Email:</strong> ${formData.email}</p>`;
+  resultHTML += `<p><strong>Phone:</strong> ${formData.phone}</p>`;
+  resultHTML += `<p><strong>Address:</strong> ${formData.address}</p>`;
+  resultHTML += `<p><strong>Question 1 (Satisfaction):</strong> ${formData.questions.q1}</p>`;
+  resultHTML += `<p><strong>Question 2 (Ease of use):</strong> ${formData.questions.q2}</p>`;
+  resultHTML += `<p><strong>Question 3 (Recommendation):</strong> ${formData.questions.q3}</p>`;
+  resultHTML += `<p><strong>Question 4 (Design rating):</strong> ${formData.questions.q4}</p>`;
+  resultHTML += `<p><strong>Question 5 (Customer support):</strong> ${formData.questions.q5}</p>`;
+  resultHTML += `<p><strong>Average Rating:</strong> <span style="color: ${avgColor};">${questionsAverage.toFixed(2)}</span></p>`;
+
+  document.body.insertAdjacentHTML('beforeend', `<div class="form-result">${resultHTML}</div>`);
+}
+
+  </script>
+  
+  
+</section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Dominykas Steponėnas</h3>
+      <p>Bankrot.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/facebook/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
